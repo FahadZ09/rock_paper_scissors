@@ -1,5 +1,5 @@
 const choices = ["rock", "paper", "scissors"]
-const playerSelection = "rock"
+const playerSelection = window.prompt()
 let playerScore = 0
 let computerScore = 0
 function getComputerChoice() {
@@ -33,6 +33,8 @@ function game() {
     for (let i = 0; i < 5 ; i++ ){
         const computerSelection = getComputerChoice()
         playRound(playerSelection, computerSelection)
+        console.log(playRound(playerSelection, computerSelection))
+
     }
     if (playerScore > computerScore){
         return "You Won! Great Job"
