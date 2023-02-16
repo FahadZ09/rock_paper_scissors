@@ -1,5 +1,5 @@
 const choices = ["rock", "paper", "scissors"]
-const playerSelection = window.prompt()
+const playerSelection = prompt("Write your Choice", "Rock, Paper. Scissors")
 let playerScore = 0
 let computerScore = 0
 function getComputerChoice() {
@@ -37,11 +37,11 @@ function game() {
 
     }
     if (playerScore > computerScore){
-        return "You Won! Great Job"
+        return "You are Victorious! Great Job"
     } else if (computerScore > playerScore){
-        return "You Lost! Better luck next time"
+        return "You have been Defeated! Better luck next time"
     }else {
-        return "You tied! You are a bot"
+        return "You tied with the computer! You are a bot"
     }
 }
 
